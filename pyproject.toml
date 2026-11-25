@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "targetbook"
+version = "1.0.0"
+description = "Target-to-book simulator: what model target weights become under a long-short mandate, a vol cap, turnover bands, trading costs, carry and a rebalance schedule, with a step-by-step attribution waterfall on synthetic data."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "scipy>=1.11", "clarabel>=0.10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "cvxpy>=1.5"]
+
+[project.scripts]
+targetbook = "targetbook.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

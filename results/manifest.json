@@ -1,0 +1,121 @@
+{
+ "desk": {
+  "band": 0.08,
+  "band_mode": "edge",
+  "carry_long_bps": [
+   20.0,
+   10.0,
+   30.0,
+   25.0
+  ],
+  "carry_short_bps": [
+   60.0,
+   30.0,
+   80.0,
+   70.0
+  ],
+  "cost_bps": [
+   3.0,
+   1.0,
+   5.0,
+   4.0
+  ],
+  "n_tranches": 2,
+  "period_weeks": 2,
+  "vol_cap": 0.06
+ },
+ "dev_seeds": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "heldout_seeds": [
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110
+ ],
+ "mandate": {
+  "asset_cap": 0.5,
+  "gross_cap": 2.0,
+  "group_hi": [
+   0.4,
+   0.5,
+   0.3,
+   0.3
+  ],
+  "group_lo": [
+   -0.3,
+   -0.2,
+   -0.3,
+   -0.15
+  ],
+  "groups": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   3,
+   3,
+   3
+  ],
+  "net_cap": 0.25
+ },
+ "market": {
+  "alpha_halflife": 60.0,
+  "alpha_sd": 0.03,
+  "group_names": [
+   "equity",
+   "rates",
+   "commodities",
+   "credit"
+  ],
+  "group_vols": [
+   0.16,
+   0.06,
+   0.2,
+   0.08
+  ],
+  "n_years": 11,
+  "noise_halflife": 10.0,
+  "noise_sd": 0.04,
+  "per_group": 3,
+  "rho_group": 0.5,
+  "rho_market": 0.15,
+  "sv_halflife": 60.0,
+  "sv_sd": 0.3,
+  "t_df": 5.0,
+  "warmup_days": 252
+ },
+ "platform": "Windows-10-10.0.26200-SP0",
+ "sha256": {
+  "RESULTS.md": "c2e355d9c32aa462b93e23c99918934017ee9d32e6e748696280b4ab92041d70",
+  "bands.json": "df6b93f65e72d09cd57b5b5d2db937b05a3117e41bc26b0c22df50628d5ca223",
+  "dev_choices.json": "df83d58ff7a64a6dbd2e17c68f25969207fbfc8cf354dd957cc25b4f6625401d",
+  "repair.json": "e4c73905331240e4a733c09b8802ac8f4d7cea3fbbc7896729278bcb2994bc9c",
+  "runs.json": "73513c5a41ec0379ea58f7dd372327ee7f1f7b7c2b95bf6451f1f9ba2df89338",
+  "timing.json": "e148a8ab17dd9ad2dea33d732e113fc5fe4c5f99a48fa9c44e9abe3b8a2cce16",
+  "waterfall.json": "7632cfa067eba6d3a25c6f210ae30cdfc28fe0d7f72cae26401c480726fe323c"
+ },
+ "solver": "CLARABEL",
+ "version": "1.0.0",
+ "versions": {
+  "clarabel": "0.11.1",
+  "numpy": "2.4.6",
+  "python": "3.11.9",
+  "scipy": "1.17.1"
+ }
+}
